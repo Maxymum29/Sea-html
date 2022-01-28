@@ -1,0 +1,113 @@
+@media (max-width: 1439px){
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .rooms{
+        &__wrapper{
+            flex-direction: column;
+            align-items:center;
+        }
+        &__slides{
+            margin-bottom: 20px;
+            &-descr{
+                left: 48%;
+            }
+        }
+    }
+    .title-rooms{
+        &::before{
+            left: 43%;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .title-rooms{
+        &::before{
+            left: 40%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .rooms{
+        &__slides{
+            &::before{
+                left: 53%;
+            }
+            img{
+                display: block;
+
+                object-fit: cover;
+            }
+            &-descr{
+                font-size: 13px;
+                left: 50%;
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .title-rooms{
+        &::before{
+            left: 37%;
+        }
+    }
+    .slick-prev{
+        left: 8%;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        width: 320px;
+        padding: 0 10px;
+    }
+    .rooms{
+        &__items{
+            grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+            justify-content: flex-end;
+        }
+        &__slides{
+            display: block;
+            width: 280px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &::before{
+                left: 49%;
+            }
+            img{
+                
+                width: 280px;
+                height: 380px;
+            }
+            &-descr{
+                left: 50%;
+            }
+        }
+        &__date{
+            display: none;
+            &-mobile{
+                margin-top: 20px;
+                display: block;
+            }
+        }
+    }
+
+    .title-rooms{
+        &::before{
+            left: 27%;
+        }
+    }
+}

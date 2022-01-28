@@ -1,0 +1,45 @@
+@mixin before_box{
+    &::before{
+        position: absolute;
+        content: '';
+        width: 54px;
+        height: 54px;
+        top: -25%;
+        left: 0;
+        z-index: -1;
+        background: $main-color;
+    }
+}
+@mixin before_circle{
+    &::before{
+        position: absolute;
+        content: '';
+        width: 348px;
+        height: 348px;
+        border: 35px solid $main-color;
+        border-radius: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color:rgba(255, 255, 255, 0);
+    }
+}
+@mixin before_up{
+    &::before{
+        position: absolute;
+        content: '';
+        width: 272px;
+        height: 68px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 80px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 1;
+        background: $main-color;
+        box-shadow: -2.3px 3.3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+

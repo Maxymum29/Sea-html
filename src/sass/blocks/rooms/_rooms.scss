@@ -1,0 +1,155 @@
+.rooms{
+    padding-top: 75px;
+    &__wrapper{
+    display: flex;
+    position: relative;
+    margin-top: 56px;
+    }
+    &__slides{
+        position: relative;
+        margin-right: 32px;
+        width: 550px;
+        display: flex;
+        @include before_up;
+        img{
+            width: 550px;
+            height: 430px;
+        }
+        &-descr{
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 24%;
+            transform: translateX(-50%);
+            z-index: 2;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            color: #000;
+            span{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+    &__items{
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 11px;
+        column-gap: 30px; 
+        margin-bottom: 33px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    &__descr{
+        margin-left: 14px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #000;
+    }
+
+    &__title-equipment{
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+        &-subtitle{
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 12px;
+            text-align: center;
+            color: #525252;
+        }
+    }
+    &__date{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 45px 45px;
+        margin-top: 20px;
+        border: 1px solid #cdcdcd;
+        &-month{
+            border: 1px solid #cdcdcd;
+            padding-top: 10px;
+            text-align: center;
+        }
+        &-money{
+            border: 1px solid #cdcdcd;
+            padding-top: 10px;
+            text-align: center;
+        }
+        &-mobile{
+            display: none;
+        }
+    }
+    &__btn{
+        width: 245px;
+        height: 45px;
+        margin: 0 auto;
+        margin-top: 32px;
+        border-radius: 19.9px;
+        padding: 10px 0px 0px 30px;
+        box-shadow: -2.3px 3.3px 5px 0 rgba(0, 0, 0, 0.25);
+        background-color: $main-color;
+        transition: all 0.5s linear;
+        cursor: pointer;
+        &:hover {
+            background-color:$hover-color;
+            color: #fff;
+        }  
+        a{
+            font-size: 14px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #131313;
+            transition: all 0.5s linear;
+            &:hover {
+                color:#353535;
+            }  
+        }
+    }
+}
+
+.title-rooms{
+    &::before{
+        top: -6%;
+        left: 44%;
+        transform: translateX(-50%);
+    }
+}
+
+.slick-arrow{
+    font-size: 0px;
+    outline: none !important;
+    border: none;
+}
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    z-index: 1;
+    width: 15px;
+    height: 27px;
+    background: url(../icons/arrow-prev.svg) center center/cover no-repeat;
+    &:active{
+        transform:rotate(-10deg)
+    }
+}
+.slick-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    z-index: 1;
+    width: 15px;
+    height: 27px;
+    background: url(../icons/arrow-next.svg) center center/cover no-repeat;
+    &:active{
+        transform:rotate(10deg)
+    }
+}

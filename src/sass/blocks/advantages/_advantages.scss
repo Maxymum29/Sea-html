@@ -1,0 +1,79 @@
+.advantages{
+    padding-top: 37px;
+    background: url(../img/advantages.png) center center/cover no-repeat;
+    min-height: 430px;  
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 47px;
+        min-height: 220px;
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;
+        &-house{
+            justify-content: flex-start;
+        }
+        &-piggy{
+            justify-content: flex-end;
+        }
+        &-car{
+            justify-content: flex-start;
+        }
+        &-relax{
+            justify-content: flex-end;
+        }
+        &-wifi{
+            justify-content: flex-start;
+        }
+        &-noun{
+            justify-content: flex-end;
+        }
+    }
+
+    &__icon{
+        width: 113px;
+        height: 113px;
+        border-radius: 100%;
+        background-color:#fff;
+        box-shadow: -2.3px 3.3px 5px 0 rgba(0, 0, 0, 0.25);
+        &-house{
+            padding: 23px 24px 27px 24px;
+        }
+        &-piggy{
+            padding: 27px 24px 26px 25px;
+        }
+        &-car{
+            padding: 39px 19px;
+        }
+        &-relax{
+            padding: 24px 21px 28px 22px;
+        }
+        &-wifi{
+            padding: 30px 19px 25px 20px;
+        }
+        &-noun{
+            padding: 25px 29px;
+        }
+    }
+    &__descr{
+        margin-top: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #131313;
+    }
+
+}
+.title-advantages{
+    position: relative;
+    padding-top: 50px;
+    z-index: 10;
+   &::before{
+       display: block;
+       top: 47px;
+       left: 32%;
+       transform: translateX(-50%);
+      
+   }
+}

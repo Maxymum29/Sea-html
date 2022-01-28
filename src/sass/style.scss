@@ -1,0 +1,54 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #131313;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    @include before_box;
+    &-about{
+        &:before{
+            display: block;
+            top: -5px;
+            left: 46%;
+            transform: translateX(-50%)
+        }
+    }
+}
+@import 'blocks/header/header';
+@import 'blocks/about/about';
+@import 'blocks/advantages/advantages';
+@import 'blocks/rooms/rooms';
+@import 'blocks/get/get';
+@import 'blocks/reviews/reviews';
+@import 'blocks/footer/footer';
+
+
+
+
+
+@import 'blocks/header/media-header';
+@import 'blocks/about/media-about';
+@import 'blocks/advantages/media-advantages';
+@import 'blocks/rooms/media-rooms';
+@import 'blocks/get/media-get';
+@import 'blocks/reviews/media-reviews';
+@import 'blocks/footer/media-footer';

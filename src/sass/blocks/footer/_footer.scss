@@ -1,0 +1,97 @@
+.footer{
+    min-height: 410px;
+    padding: 60px 0 87px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items{
+        position: relative;
+    }
+    &__number{
+        display: flex;
+        flex-direction: column;
+        a{
+            font-size: 14px;
+            font-weight: normal;
+            text-decoration: none;
+            color: #131313;
+            margin-top: 14px;
+            transition: all 0.2s linear;
+            &:hover{
+                transform: scale(110%);
+            }
+
+        }
+    }
+
+    &__social{
+        margin-top: 11px;
+        &-position{
+            position: absolute;
+            top: 32%;
+            left: 50%;
+            a{
+                margin-left: 5px;
+            }
+            img{
+                transition: all 0.2s linear;
+                &:hover{
+                    transform: scale(115%);
+                }
+            }
+        }
+        img{
+            transition: all 0.2s linear;
+            &:hover{
+                transform: scale(115%);
+            }
+        }
+    }
+    
+    &__title{
+        margin-bottom: 24px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #131313;
+    }
+    &__address{
+        font-size: 14px;
+        font-weight: normal;
+        color: #131313;
+    }
+
+    &__links{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    &__link{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 12px;
+        a{
+            color: #131313;
+            text-decoration: none;
+            transition: all 0.1s ease;
+            &:hover {
+                border-bottom: 3px solid $main-color; 
+            }      
+        }
+    }
+    &__divider{
+        width: 1140px;
+        height: 1px;
+        margin: 0 auto;
+        margin-top: 25px;
+        background-color: #e0e0e0;
+    }
+
+    &__copyright{
+        margin-top: 15px;
+        text-align: right;
+        font-size: 10px;
+        font-weight: normal;
+        color: #626262;
+    }
+}

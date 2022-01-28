@@ -1,0 +1,37 @@
+.get{
+    padding-top: 75px;
+    &__wrapper{
+        position: relative;
+        margin-top: 56px;
+        display: flex;
+        img{
+            width: 655px;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    &__img{
+        @include before_circle;
+        &:before{
+            top: -120px;
+            left: 77%;
+            display: block;
+            
+            
+        }
+    }
+    &__descr{
+        margin-right: 28px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #131313;
+        z-index: 1;
+    }
+}
+
+.title-get{
+    &:before{
+        top: -3px;
+        left: 36%;
+    }
+}

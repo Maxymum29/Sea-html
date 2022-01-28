@@ -1,0 +1,169 @@
+.reviews{
+    position: relative;
+    min-height: 650px;
+    background: url(../img/advantages.png) center center/cover no-repeat;
+    z-index: 0;
+    padding-top: 33px;
+    @include before_circle;
+        &::before{
+            top: -20%;
+            left: -14%;
+            border: 35px solid #fff;
+        }
+    &__slides{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 100px 0 100px;
+    }
+    &__items{
+        margin-top: 55px;
+    }
+
+    &__descr{
+        position: relative;
+        width: 430px;
+        height: 237px;
+        background-color: #fff;
+        padding: 28px 50px 62px 43px;
+        border-radius: 25px;
+        box-shadow: -4.2px 4.2px 8px 0 rgba(0, 0, 0, 0.2);
+        font-size: 12px;
+        font-weight: 600;
+        color: #131313;
+        &:nth-child(1){
+            margin-right: 40px;
+            margin-left: 20px;
+       }
+    }
+    &__up{
+        position: absolute;
+        top: 0%;
+        right: 92%;
+        font-size: 50.5px;
+    }
+    &__down{
+        position: absolute;
+        top: 65%;
+        left: 90%;
+        font-size: 50.5px;
+    }
+    &__date-name{
+        position: absolute;
+        bottom: 20px;
+    }
+    &__date-number{
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
+    &__btn{
+        margin: 0 auto;
+        margin-top: 100px;
+        width: 245px;
+        height: 45px;
+        padding-top: 12px;
+        padding-left: 55px;
+        font-size: 14px;
+        font-weight: 800;
+        border-radius: 19.9px;
+        box-shadow: -2.3px 3.3px 5px 0 rgba(0, 0, 0, 0.25);
+        background-color:$main-color;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        &:hover {
+            background-color:$hover-color;
+            color: #fff;
+        }  
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: #131313;
+            transition: all 0.5s linear;
+            &:hover {
+                color:#353535;
+            }  
+            
+        }
+    }
+    .slick-arrow{
+        font-size: 0px;
+        outline: none !important;
+        border: none;
+    }
+    .slick-prev{
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        left: 2%;
+        z-index: 1;
+        width: 15px;
+        height: 27px;
+        background: url(../icons/arrow-prev.svg) center center/cover no-repeat;
+        &:active{
+            transform:rotate(-10deg)
+        }
+    }
+    .slick-next{
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        right: 2%;
+        z-index: 1;
+        width: 15px;
+        height: 27px;
+        background: url(../icons/arrow-next.svg) center center/cover no-repeat;
+        &:active{
+            transform:rotate(10deg)
+        }
+    }
+
+}
+
+.title-reviews{
+    padding-top: 100px;
+    &::before{
+        top: 65%;
+        left: 42%;
+    }
+}
+.slick-dots{
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    li{
+        list-style-type: none;
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+    button{
+        border: none;
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .slick-active{
+        
+        button{
+            width: 20px;
+            height: 20px;
+            outline: none !important;
+            background-color:$main-color;
+            border: 3px solid #818181;
+            box-shadow: -0.7px 0.7px 4px 0 rgba(0, 0, 0, 0.4);
+            transition: all 0.2s ease;
+            &:active{
+                border: 3px solid #818181;
+                box-shadow: -0.7px 0.7px 4px 0 rgba(0, 0, 0, 0.4);
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}

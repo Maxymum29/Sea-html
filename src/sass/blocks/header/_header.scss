@@ -1,0 +1,91 @@
+.header{
+    position: relative;
+    background: url(../img/header-bg.png) center center/cover no-repeat;
+    min-height: 700px;
+    // border-bottom-right-radius: 15%;
+    // border-bottom-left-radius: 15%;
+    &__ellipse{
+        position: absolute;
+        top: 0;
+        right: 0px;
+
+    }
+
+    &__links{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 100px;
+        list-style-type: none;
+    }
+    &__link{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.67;
+        text-align: center;
+        a{
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.1s ease;
+            &:hover {
+                
+                border-bottom: 3px solid $main-color;
+               
+            }      
+        }
+    }
+    &__title{
+        padding-top: 150px;
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 1.37;
+        letter-spacing: 2.6px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2.5px 4.3px 4.9px rgba(0, 0, 0, 0.75);
+    }
+    &__subtitle{
+        font-size: 42px;
+        font-weight: 800;
+        letter-spacing: 4.2px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2.5px 4.3px 4.9px rgba(0, 0, 0, 0.75);
+    }
+    &__btn{
+        width: 225px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 200px;
+        padding-top: 6px;
+        border-radius: 19.9px;
+        box-shadow: -2.3px 3.3px 5px 0 rgba(0, 0, 0, 0.25);
+        background-color: $main-color;
+        font-size: 14px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 28px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        &:hover {
+            background-color:$hover-color;
+            color: #fff;
+        }  
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #131313;
+            transition: all 0.5s linear;
+            &:hover {
+                color:#353535;
+            }  
+            
+        }
+
+    }
+}
+.hamburger{
+    display: none;
+}

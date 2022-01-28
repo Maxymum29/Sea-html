@@ -1,0 +1,32 @@
+.about{
+    position: relative;
+    padding-top: 74px;
+    min-height: 590px;
+    &__wrapper{
+        position: relative;
+        margin-top: 56px;
+        display: flex;
+        img{
+            margin-right: 28px;
+            width: 655px;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    &__img{
+        @include before_circle;
+        &:before{
+            top: -120px;
+            left: -120px;
+            display: block;
+            
+            
+        }
+    }
+    &__descr{
+        font-size: 14px;
+        font-weight: 400;
+        color: #131313;
+    }
+    
+}
